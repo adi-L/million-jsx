@@ -1,0 +1,5 @@
+node_modules
+uploads
+dist
+server/store.json
+debug.log
