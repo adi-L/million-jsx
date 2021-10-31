@@ -33,31 +33,5 @@ module.exports = (env, argv) => {
                 skipWaiting: true,
             }),
         ],
-        module: {
-            rules: [
-                {
-                    test: /\.m?js$/,
-                    exclude: /(node_modules|bower_components)/,
-                    use: {
-                        loader: "babel-loader",
-                        options: {
-                            presets: [
-                                [
-                                    "@babel/preset-env",
-                                    {
-                                        "useBuiltIns": "entry",
-                                        "corejs": "3.6.5"
-                                    }
-                                ]
-
-                            ],
-                            plugins: [
-                                "@babel/plugin-proposal-class-properties",
-                            ]
-                        },
-                    },
-                },
-            ]
-        }
     });
 }
