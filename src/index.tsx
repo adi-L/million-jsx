@@ -1,7 +1,8 @@
-import { createElement, patch,VNode,VElement} from 'million';
+import { createElement, patch,VElement} from 'million';
+
 export default class App {
     constructor(targetId:string) {
-        const Example = (props: { children: VNode | null | undefined }):VElement => <p>{props.children}</p>
+        const Example = (props:any):VElement => <p>{props.children}</p>
         const root = document.getElementById(targetId);
         const app = createElement(<Example>Goodbye world</Example>);
         setTimeout(() => {
