@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "baseUrl": ".",
-    "jsx": "react-jsx",
+    "jsx": "preserve",
     "outDir": "./dist/",
     "module": "esnext",
     "target": "esnext",
